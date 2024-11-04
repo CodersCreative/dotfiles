@@ -1,0 +1,264 @@
+13:47:52.474: Platform: Wayland
+13:47:52.474: CPU Name: 12th Gen Intel(R) Core(TM) i5-12500H
+13:47:52.474: CPU Speed: 1366.781MHz
+13:47:52.474: Physical Cores: 12, Logical Cores: 16
+13:47:52.474: Physical Memory: 15778MB Total, 511MB Free
+13:47:52.474: Kernel Version: Linux 6.8.7-300.fc40.x86_64
+13:47:52.474: Distribution: "Fedora Linux" 40
+13:47:52.474: Desktop Environment: KDE (KDE)
+13:47:52.474: Session Type: wayland
+13:47:52.476: Qt Version: 6.7.0 (runtime), 6.6.2 (compiled)
+13:47:52.476: Portable mode: false
+13:47:52.503: OBS 30.1.1 (linux)
+13:47:52.503: ---------------------------------
+13:47:52.504: ---------------------------------
+13:47:52.504: audio settings reset:
+13:47:52.504: 	samples per sec: 48000
+13:47:52.504: 	speakers:        2
+13:47:52.504: 	max buffering:   960 milliseconds
+13:47:52.504: 	buffering type:  dynamically increasing
+13:47:52.512: ---------------------------------
+13:47:52.512: Initializing OpenGL...
+13:47:52.512: Using EGL/Wayland
+13:47:52.512: Initialized EGL 1.5
+13:47:52.515: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2
+13:47:52.515: OpenGL loaded successfully, version 3.3.0 NVIDIA 550.76, shading language 3.30 NVIDIA via Cg compiler
+13:47:52.536: ---------------------------------
+13:47:52.536: video settings reset:
+13:47:52.536: 	base resolution:   1920x1080
+13:47:52.536: 	output resolution: 1920x1080
+13:47:52.536: 	downscale filter:  Bicubic
+13:47:52.536: 	fps:               60/1
+13:47:52.536: 	format:            NV12
+13:47:52.536: 	YUV mode:          Rec. 709/Partial
+13:47:52.536: NV12 texture support enabled
+13:47:52.536: P010 texture support not available
+13:47:52.536: Audio monitoring device:
+13:47:52.536: 	name: Default
+13:47:52.536: 	id: default
+13:47:52.536: ---------------------------------
+13:47:52.547: Failed to load 'en-US' text for module: 'decklink-captions.so'
+13:47:52.559: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+13:47:52.571: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+13:47:52.571: Failed to initialize module 'decklink.so'
+13:47:52.737: [pipewire] Available captures:
+13:47:52.737: [pipewire]     - Desktop capture
+13:47:52.737: [pipewire]     - Window capture
+13:47:52.767: v4l2loopback not installed, virtual camera disabled
+13:47:52.835: [obs-browser]: Version 2.23.4
+13:47:52.835: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0+g17f8588+chromium-103.0.5060.134 (compiled)
+13:47:52.972: NVENC supported
+13:47:52.972: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+13:47:52.972: FFmpeg VAAPI H264 encoding not supported
+13:47:52.972: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+13:47:52.972: FFmpeg VAAPI AV1 encoding not supported
+13:47:52.972: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+13:47:52.972: FFmpeg VAAPI HEVC encoding not supported
+13:47:53.113: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.4.2 | RPC Version: 1)
+13:47:53.113: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.6.2 | Qt version (run-time): 6.7.0
+13:47:53.113: [obs-websocket] [obs_module_load] Linked ASIO Version: 102801
+13:47:53.117: [obs-websocket] [obs_module_load] Module loaded.
+13:47:53.173: [vlc-video]: VLC 3.0.20 Vetinari found, VLC video source enabled
+13:47:53.173: ---------------------------------
+13:47:53.173:   Loaded Modules:
+13:47:53.173:     vlc-video.so
+13:47:53.173:     text-freetype2.so
+13:47:53.173:     rtmp-services.so
+13:47:53.173:     obs-x264.so
+13:47:53.173:     obs-websocket.so
+13:47:53.173:     obs-webrtc.so
+13:47:53.173:     obs-webkitgtk.so
+13:47:53.173:     obs-vst.so
+13:47:53.173:     obs-transitions.so
+13:47:53.173:     obs-qsv11.so
+13:47:53.173:     obs-outputs.so
+13:47:53.173:     obs-libfdk.so
+13:47:53.173:     obs-filters.so
+13:47:53.173:     obs-ffmpeg.so
+13:47:53.173:     obs-browser.so
+13:47:53.173:     linux-v4l2.so
+13:47:53.173:     linux-pulseaudio.so
+13:47:53.173:     linux-pipewire.so
+13:47:53.173:     linux-jack.so
+13:47:53.173:     linux-capture.so
+13:47:53.173:     linux-alsa.so
+13:47:53.173:     image-source.so
+13:47:53.173:     frontend-tools.so
+13:47:53.173:     decklink-output-ui.so
+13:47:53.173:     decklink-captions.so
+13:47:53.173: ---------------------------------
+13:47:53.173: ==== Startup complete ===============================================
+13:47:53.188: All scene data cleared
+13:47:53.188: ------------------------------------------------
+13:47:53.192: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+13:47:53.192: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+13:47:53.192: pulse-input: Started recording from 'alsa_output.pci-0000_00_1f.3.analog-stereo.monitor' (default)
+13:47:53.192: [Loaded global audio device]: 'Desktop Audio'
+13:47:53.192: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+13:47:53.192: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+13:47:53.192: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+13:47:53.192: [Loaded global audio device]: 'Mic/Aux'
+13:47:53.192: PipeWire initialized
+13:47:53.193: Switched to scene 'Firefox'
+13:47:53.193: ------------------------------------------------
+13:47:53.193: Loaded scenes:
+13:47:53.193: - scene 'Scene':
+13:47:53.193:     - source: 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source)
+13:47:53.193: - scene 'CodeFullScreen':
+13:47:53.193:     - source: 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source)
+13:47:53.193: - scene 'Firefox':
+13:47:53.193:     - source: 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source)
+13:47:53.193: ------------------------------------------------
+13:47:53.298: [pipewire] Screencast session created
+13:47:53.375: [pipewire] Asking for desktop
+13:47:53.450: [pipewire] desktop selected, setting up screencast
+13:47:53.477: [pipewire] Server version: 1.0.5
+13:47:53.477: [pipewire] Library version: 1.0.5
+13:47:53.477: [pipewire] Header version: 1.0.4
+13:47:53.477: [pipewire] Created stream 0x55558f6f7a50
+13:47:53.477: [pipewire] Stream 0x55558f6f7a50 state: "connecting" (error: none)
+13:47:53.477: [pipewire] Playing stream 0x55558f6f7a50
+13:47:53.477: [pipewire] Stream 0x55558f6f7a50 state: "paused" (error: none)
+13:47:53.484: [pipewire] Negotiated format:
+13:47:53.484: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+13:47:53.484: [pipewire]     Modifier: 0x0
+13:47:53.484: [pipewire]     Size: 1920x1080
+13:47:53.484: [pipewire]     Framerate: 0/1
+13:47:53.484: [pipewire] Negotiated format:
+13:47:53.484: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+13:47:53.484: [pipewire]     Modifier: 0x300000000e08014
+13:47:53.484: [pipewire]     Size: 1920x1080
+13:47:53.484: [pipewire]     Framerate: 0/1
+13:47:53.486: [pipewire] Stream 0x55558f6f7a50 state: "streaming" (error: none)
+13:47:53.741: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+13:47:53.741: 
+13:48:11.059: ---------------------------------
+13:48:11.059: [x264 encoder: 'simple_video_recording'] preset: veryfast
+13:48:11.059: [x264 encoder: 'simple_video_recording'] profile: high
+13:48:11.059: [x264 encoder: 'simple_video_recording'] settings:
+13:48:11.059: 	rate_control: CRF
+13:48:11.059: 	bitrate:      0
+13:48:11.059: 	buffer size:  0
+13:48:11.059: 	crf:          23
+13:48:11.059: 	fps_num:      60
+13:48:11.059: 	fps_den:      1
+13:48:11.059: 	width:        1920
+13:48:11.059: 	height:       1080
+13:48:11.059: 	keyint:       250
+13:48:11.059: 
+13:48:11.144: libfdk_aac encoder created
+13:48:11.144: libfdk_aac bitrate: 192, channels: 2
+13:48:11.145: ==== Recording Start ===============================================
+13:48:11.145: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_13-48-11.mkv'...
+13:49:14.624: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_13-48-11.mkv' stopped
+13:49:14.624: Output 'simple_file_output': stopping
+13:49:14.625: Output 'simple_file_output': Total frames output: 3768
+13:49:14.625: Output 'simple_file_output': Total drawn frames: 3806 (3809 attempted)
+13:49:14.625: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 3 (0.1%)
+13:49:14.625: ==== Recording Stop ================================================
+13:49:14.646: libfdk_aac encoder destroyed
+14:16:44.576: adding 21 milliseconds of audio buffering, total audio buffering is now 42 milliseconds (source: Mic/Aux)
+14:16:44.576: 
+16:05:33.308: User switched to scene 'Scene'
+16:07:32.910: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+16:07:32.914: pulse-input: Audio format: s32le, 48000 Hz, 2 channels
+16:07:32.915: pulse-input: Started recording from 'alsa_input.pci-0000_00_1f.3.analog-stereo' (default)
+16:07:32.921: User added source 'Audio Input Capture (PulseAudio)' (pulse_input_capture) to scene 'Scene'
+16:07:34.523: pulse-input: Stopped recording from 'alsa_input.usb-Razer_Inc_Razer_Seiren_V2_X_UC2140L04400267-00.mono-fallback.2'
+16:07:34.523: pulse-input: Got 62 packets with 74400 frames
+16:07:34.524: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+16:07:34.524: pulse-input: Audio format: s24le, 48000 Hz, 1 channels
+16:07:34.524: pulse-input: Sample format s24le not supported by OBS,using float32le instead for recording
+16:07:34.524: pulse-input: Started recording from 'alsa_input.usb-Razer_Inc_Razer_Seiren_V2_X_UC2140L04400267-00.mono-fallback.2'
+16:08:11.290: ---------------------------------
+16:08:11.290: [x264 encoder: 'simple_video_recording'] preset: veryfast
+16:08:11.290: [x264 encoder: 'simple_video_recording'] profile: high
+16:08:11.291: [x264 encoder: 'simple_video_recording'] settings:
+16:08:11.291: 	rate_control: CRF
+16:08:11.291: 	bitrate:      0
+16:08:11.291: 	buffer size:  0
+16:08:11.291: 	crf:          23
+16:08:11.291: 	fps_num:      60
+16:08:11.291: 	fps_den:      1
+16:08:11.291: 	width:        1920
+16:08:11.291: 	height:       1080
+16:08:11.291: 	keyint:       250
+16:08:11.291: 
+16:08:11.296: libfdk_aac encoder created
+16:08:11.296: libfdk_aac bitrate: 192, channels: 2
+16:08:11.299: ==== Recording Start ===============================================
+16:08:11.299: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_16-08-11.mkv'...
+16:08:37.283: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_16-08-11.mkv' stopped
+16:08:37.283: Output 'simple_file_output': stopping
+16:08:37.283: Output 'simple_file_output': Total frames output: 1517
+16:08:37.283: Output 'simple_file_output': Total drawn frames: 1551 (1559 attempted)
+16:08:37.283: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 8 (0.5%)
+16:08:37.283: ==== Recording Stop ================================================
+16:08:37.291: libfdk_aac encoder destroyed
+16:08:56.173: ---------------------------------
+16:08:56.173: [x264 encoder: 'simple_video_recording'] preset: veryfast
+16:08:56.173: [x264 encoder: 'simple_video_recording'] profile: high
+16:08:56.173: [x264 encoder: 'simple_video_recording'] settings:
+16:08:56.173: 	rate_control: CRF
+16:08:56.173: 	bitrate:      0
+16:08:56.173: 	buffer size:  0
+16:08:56.173: 	crf:          23
+16:08:56.173: 	fps_num:      60
+16:08:56.173: 	fps_den:      1
+16:08:56.173: 	width:        1920
+16:08:56.173: 	height:       1080
+16:08:56.173: 	keyint:       250
+16:08:56.173: 
+16:08:56.175: libfdk_aac encoder created
+16:08:56.175: libfdk_aac bitrate: 192, channels: 2
+16:08:56.177: ==== Recording Start ===============================================
+16:08:56.177: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_16-08-56.mkv'...
+16:10:04.522: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_16-08-56.mkv' stopped
+16:10:04.522: Output 'simple_file_output': stopping
+16:10:04.522: Output 'simple_file_output': Total frames output: 4061
+16:10:04.522: Output 'simple_file_output': Total drawn frames: 4098 (4101 attempted)
+16:10:04.522: Output 'simple_file_output': Number of lagged frames due to rendering lag/stalls: 3 (0.1%)
+16:10:04.522: ==== Recording Stop ================================================
+16:10:04.530: libfdk_aac encoder destroyed
+16:10:21.748: ---------------------------------
+16:10:21.748: [x264 encoder: 'simple_video_recording'] preset: veryfast
+16:10:21.748: [x264 encoder: 'simple_video_recording'] profile: high
+16:10:21.748: [x264 encoder: 'simple_video_recording'] settings:
+16:10:21.748: 	rate_control: CRF
+16:10:21.748: 	bitrate:      0
+16:10:21.748: 	buffer size:  0
+16:10:21.748: 	crf:          23
+16:10:21.748: 	fps_num:      60
+16:10:21.748: 	fps_den:      1
+16:10:21.748: 	width:        1920
+16:10:21.748: 	height:       1080
+16:10:21.748: 	keyint:       250
+16:10:21.748: 
+16:10:21.750: libfdk_aac encoder created
+16:10:21.750: libfdk_aac bitrate: 192, channels: 2
+16:10:21.751: ==== Recording Start ===============================================
+16:10:21.751: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_16-10-21.mkv'...
+16:11:45.707: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_16-10-21.mkv' stopped
+16:11:45.707: Output 'simple_file_output': stopping
+16:11:45.707: Output 'simple_file_output': Total frames output: 4998
+16:11:45.707: Output 'simple_file_output': Total drawn frames: 5037
+16:11:45.707: ==== Recording Stop ================================================
+16:11:45.718: libfdk_aac encoder destroyed
+16:11:49.343: ---------------------------------
+16:11:49.343: [x264 encoder: 'simple_video_recording'] preset: veryfast
+16:11:49.343: [x264 encoder: 'simple_video_recording'] profile: high
+16:11:49.343: [x264 encoder: 'simple_video_recording'] settings:
+16:11:49.343: 	rate_control: CRF
+16:11:49.343: 	bitrate:      0
+16:11:49.343: 	buffer size:  0
+16:11:49.343: 	crf:          23
+16:11:49.343: 	fps_num:      60
+16:11:49.343: 	fps_den:      1
+16:11:49.343: 	width:        1920
+16:11:49.343: 	height:       1080
+16:11:49.343: 	keyint:       250
+16:11:49.343: 
+16:11:49.345: libfdk_aac encoder created
+16:11:49.345: libfdk_aac bitrate: 192, channels: 2
+16:11:49.346: ==== Recording Start ===============================================
+16:11:49.346: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_16-11-49.mkv'...

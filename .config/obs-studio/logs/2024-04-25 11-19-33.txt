@@ -1,0 +1,499 @@
+11:19:33.449: Platform: Wayland
+11:19:33.449: CPU Name: 12th Gen Intel(R) Core(TM) i5-12500H
+11:19:33.449: CPU Speed: 1593.389MHz
+11:19:33.449: Physical Cores: 12, Logical Cores: 16
+11:19:33.449: Physical Memory: 15778MB Total, 6991MB Free
+11:19:33.449: Kernel Version: Linux 6.8.7-300.fc40.x86_64
+11:19:33.449: Distribution: "Fedora Linux" 40
+11:19:33.449: Desktop Environment: KDE (KDE)
+11:19:33.449: Session Type: wayland
+11:19:33.450: Qt Version: 6.7.0 (runtime), 6.6.2 (compiled)
+11:19:33.450: Portable mode: false
+11:19:33.474: OBS 30.1.1 (linux)
+11:19:33.474: ---------------------------------
+11:19:33.475: ---------------------------------
+11:19:33.475: audio settings reset:
+11:19:33.475: 	samples per sec: 48000
+11:19:33.475: 	speakers:        2
+11:19:33.475: 	max buffering:   960 milliseconds
+11:19:33.475: 	buffering type:  dynamically increasing
+11:19:33.482: ---------------------------------
+11:19:33.482: Initializing OpenGL...
+11:19:33.482: Using EGL/Wayland
+11:19:33.482: Initialized EGL 1.5
+11:19:33.485: Loading up OpenGL on adapter NVIDIA Corporation NVIDIA GeForce RTX 3060 Laptop GPU/PCIe/SSE2
+11:19:33.485: OpenGL loaded successfully, version 3.3.0 NVIDIA 550.76, shading language 3.30 NVIDIA via Cg compiler
+11:19:33.502: ---------------------------------
+11:19:33.502: video settings reset:
+11:19:33.502: 	base resolution:   1920x1080
+11:19:33.502: 	output resolution: 1920x1080
+11:19:33.502: 	downscale filter:  Bicubic
+11:19:33.502: 	fps:               60/1
+11:19:33.502: 	format:            NV12
+11:19:33.502: 	YUV mode:          Rec. 709/Partial
+11:19:33.502: NV12 texture support enabled
+11:19:33.502: P010 texture support not available
+11:19:33.502: Audio monitoring device:
+11:19:33.502: 	name: Default
+11:19:33.502: 	id: default
+11:19:33.502: ---------------------------------
+11:19:33.514: Failed to load 'en-US' text for module: 'decklink-captions.so'
+11:19:33.527: Failed to load 'en-US' text for module: 'decklink-output-ui.so'
+11:19:33.538: A DeckLink iterator could not be created.  The DeckLink drivers may not be installed
+11:19:33.538: Failed to initialize module 'decklink.so'
+11:19:33.687: [pipewire] Available captures:
+11:19:33.687: [pipewire]     - Desktop capture
+11:19:33.687: [pipewire]     - Window capture
+11:19:33.711: v4l2loopback not installed, virtual camera disabled
+11:19:33.758: [obs-browser]: Version 2.23.4
+11:19:33.758: [obs-browser]: CEF Version 103.0.5060.134 (runtime), 103.0.0+g17f8588+chromium-103.0.5060.134 (compiled)
+11:19:33.865: NVENC supported
+11:19:33.866: VAAPI: Failed to initialize display in vaapi_device_h264_supported
+11:19:33.866: FFmpeg VAAPI H264 encoding not supported
+11:19:33.866: VAAPI: Failed to initialize display in vaapi_device_av1_supported
+11:19:33.866: FFmpeg VAAPI AV1 encoding not supported
+11:19:33.866: VAAPI: Failed to initialize display in vaapi_device_hevc_supported
+11:19:33.866: FFmpeg VAAPI HEVC encoding not supported
+11:19:33.991: [obs-websocket] [obs_module_load] you can haz websockets (Version: 5.4.2 | RPC Version: 1)
+11:19:33.991: [obs-websocket] [obs_module_load] Qt version (compile-time): 6.6.2 | Qt version (run-time): 6.7.0
+11:19:33.991: [obs-websocket] [obs_module_load] Linked ASIO Version: 102801
+11:19:33.995: [obs-websocket] [obs_module_load] Module loaded.
+11:19:34.044: [vlc-video]: VLC 3.0.20 Vetinari found, VLC video source enabled
+11:19:34.045: ---------------------------------
+11:19:34.045:   Loaded Modules:
+11:19:34.045:     vlc-video.so
+11:19:34.045:     text-freetype2.so
+11:19:34.045:     rtmp-services.so
+11:19:34.045:     obs-x264.so
+11:19:34.045:     obs-websocket.so
+11:19:34.045:     obs-webrtc.so
+11:19:34.045:     obs-webkitgtk.so
+11:19:34.045:     obs-vst.so
+11:19:34.045:     obs-transitions.so
+11:19:34.045:     obs-qsv11.so
+11:19:34.045:     obs-outputs.so
+11:19:34.045:     obs-libfdk.so
+11:19:34.045:     obs-filters.so
+11:19:34.045:     obs-ffmpeg.so
+11:19:34.045:     obs-browser.so
+11:19:34.045:     linux-v4l2.so
+11:19:34.045:     linux-pulseaudio.so
+11:19:34.045:     linux-pipewire.so
+11:19:34.045:     linux-jack.so
+11:19:34.045:     linux-capture.so
+11:19:34.045:     linux-alsa.so
+11:19:34.045:     image-source.so
+11:19:34.045:     frontend-tools.so
+11:19:34.045:     decklink-output-ui.so
+11:19:34.045:     decklink-captions.so
+11:19:34.045: ---------------------------------
+11:19:34.045: ==== Startup complete ===============================================
+11:19:34.072: All scene data cleared
+11:19:34.072: ------------------------------------------------
+11:19:34.078: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+11:19:34.078: pulse-input: Audio format: s16le, 16000 Hz, 1 channels
+11:19:34.078: pulse-input: Started recording from 'bluez_output.28_9A_4B_71_1B_D1.1.monitor' (default)
+11:19:34.078: [Loaded global audio device]: 'Desktop Audio'
+11:19:34.079: pulse-input: Server name: 'PulseAudio (on PipeWire 1.0.5) 15.0.0'
+11:19:34.079: pulse-input: Audio format: float32le, 48000 Hz, 1 channels
+11:19:34.079: pulse-input: Started recording from 'bluez_input.28:9A:4B:71:1B:D1' (default)
+11:19:34.079: [Loaded global audio device]: 'Mic/Aux'
+11:19:34.079: PipeWire initialized
+11:19:34.080: Switched to scene 'Scene'
+11:19:34.080: ------------------------------------------------
+11:19:34.080: Loaded scenes:
+11:19:34.080: - scene 'Scene':
+11:19:34.080:     - source: 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source)
+11:19:34.080: ------------------------------------------------
+11:19:34.180: [pipewire] Screencast session created
+11:19:34.253: [pipewire] Asking for desktop
+11:19:34.352: [pipewire] desktop selected, setting up screencast
+11:19:34.362: [pipewire] Server version: 1.0.5
+11:19:34.362: [pipewire] Library version: 1.0.5
+11:19:34.362: [pipewire] Header version: 1.0.4
+11:19:34.362: [pipewire] Created stream 0x559e0ec66770
+11:19:34.362: [pipewire] Stream 0x559e0ec66770 state: "connecting" (error: none)
+11:19:34.362: [pipewire] Playing stream 0x559e0ec66770
+11:19:34.363: [pipewire] Stream 0x559e0ec66770 state: "paused" (error: none)
+11:19:34.368: [pipewire] Negotiated format:
+11:19:34.368: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:19:34.368: [pipewire]     Modifier: 0x0
+11:19:34.368: [pipewire]     Size: 2560x1440
+11:19:34.368: [pipewire]     Framerate: 0/1
+11:19:34.368: [pipewire] Negotiated format:
+11:19:34.368: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:19:34.368: [pipewire]     Modifier: 0x300000000e08014
+11:19:34.368: [pipewire]     Size: 2560x1440
+11:19:34.368: [pipewire]     Framerate: 0/1
+11:19:34.370: [pipewire] Stream 0x559e0ec66770 state: "streaming" (error: none)
+11:19:34.627: adding 21 milliseconds of audio buffering, total audio buffering is now 21 milliseconds (source: Desktop Audio)
+11:19:34.627: 
+11:19:39.128: adding 64 milliseconds of audio buffering, total audio buffering is now 85 milliseconds (source: Desktop Audio)
+11:19:39.128: 
+11:19:40.667: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ec79de0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:19:47.052: [pipewire] Stream 0x559e0ec66770 state: "paused" (error: none)
+11:19:47.052: [pipewire] Stream 0x559e0ec66770 state: "unconnected" (error: none)
+11:19:47.056: PipeWire initialized
+11:19:47.059: [pipewire] Screencast session created
+11:19:47.060: [pipewire] Asking for desktop
+11:19:52.787: PipeWire initialized
+11:19:52.789: [pipewire] Failed to start screencast, denied or cancelled by user
+11:19:52.807: [pipewire] Screencast session created
+11:19:52.808: [pipewire] Asking for desktop
+11:20:08.051: [pipewire] Failed to start screencast, denied or cancelled by user
+11:20:09.812: PipeWire initialized
+11:20:09.821: [pipewire] Screencast session created
+11:20:09.823: [pipewire] Asking for desktop
+11:20:12.002: [pipewire] desktop selected, setting up screencast
+11:20:12.007: [pipewire] Server version: 1.0.5
+11:20:12.007: [pipewire] Library version: 1.0.5
+11:20:12.007: [pipewire] Header version: 1.0.4
+11:20:12.007: [pipewire] Created stream 0x559e0ec4d1e0
+11:20:12.008: [pipewire] Stream 0x559e0ec4d1e0 state: "connecting" (error: none)
+11:20:12.008: [pipewire] Playing stream 0x559e0ec4d1e0
+11:20:12.008: [pipewire] Stream 0x559e0ec4d1e0 state: "paused" (error: none)
+11:20:12.016: [pipewire] Negotiated format:
+11:20:12.016: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:20:12.016: [pipewire]     Modifier: 0x0
+11:20:12.016: [pipewire]     Size: 1920x1080
+11:20:12.016: [pipewire]     Framerate: 0/1
+11:20:12.016: [pipewire] Negotiated format:
+11:20:12.016: [pipewire]     Format: 12 (Spa:Enum:VideoFormat:BGRA)
+11:20:12.016: [pipewire]     Modifier: 0x300000000e08014
+11:20:12.016: [pipewire]     Size: 1920x1080
+11:20:12.016: [pipewire]     Framerate: 0/1
+11:20:12.024: [pipewire] Stream 0x559e0ec4d1e0 state: "streaming" (error: none)
+11:20:26.575: ---------------------------------
+11:20:26.575: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:20:26.575: [x264 encoder: 'simple_video_recording'] profile: high
+11:20:26.575: [x264 encoder: 'simple_video_recording'] settings:
+11:20:26.575: 	rate_control: CRF
+11:20:26.575: 	bitrate:      0
+11:20:26.575: 	buffer size:  0
+11:20:26.575: 	crf:          23
+11:20:26.575: 	fps_num:      60
+11:20:26.575: 	fps_den:      1
+11:20:26.575: 	width:        1920
+11:20:26.575: 	height:       1080
+11:20:26.575: 	keyint:       250
+11:20:26.575: 
+11:20:26.579: libfdk_aac encoder created
+11:20:26.579: libfdk_aac bitrate: 192, channels: 2
+11:20:26.581: ==== Recording Start ===============================================
+11:20:26.581: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-20-26.mkv'...
+11:20:30.911: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-20-26.mkv' stopped
+11:20:30.911: Output 'simple_file_output': stopping
+11:20:30.911: Output 'simple_file_output': Total frames output: 221
+11:20:30.911: Output 'simple_file_output': Total drawn frames: 260
+11:20:30.915: ==== Recording Stop ================================================
+11:20:30.920: libfdk_aac encoder destroyed
+11:20:34.280: ---------------------------------
+11:20:34.280: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:20:34.280: [x264 encoder: 'simple_video_recording'] profile: high
+11:20:34.280: [x264 encoder: 'simple_video_recording'] settings:
+11:20:34.280: 	rate_control: CRF
+11:20:34.280: 	bitrate:      0
+11:20:34.280: 	buffer size:  0
+11:20:34.280: 	crf:          23
+11:20:34.280: 	fps_num:      60
+11:20:34.280: 	fps_den:      1
+11:20:34.280: 	width:        1920
+11:20:34.280: 	height:       1080
+11:20:34.280: 	keyint:       250
+11:20:34.280: 
+11:20:34.282: libfdk_aac encoder created
+11:20:34.282: libfdk_aac bitrate: 192, channels: 2
+11:20:34.283: ==== Recording Start ===============================================
+11:20:34.283: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-20-34.mkv'...
+11:20:59.129: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-20-34.mkv' stopped
+11:20:59.129: Output 'simple_file_output': stopping
+11:20:59.129: Output 'simple_file_output': Total frames output: 1452
+11:20:59.129: Output 'simple_file_output': Total drawn frames: 1491
+11:20:59.129: ==== Recording Stop ================================================
+11:20:59.137: libfdk_aac encoder destroyed
+11:21:06.837: ---------------------------------
+11:21:06.837: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:21:06.837: [x264 encoder: 'simple_video_recording'] profile: high
+11:21:06.838: [x264 encoder: 'simple_video_recording'] settings:
+11:21:06.838: 	rate_control: CRF
+11:21:06.838: 	bitrate:      0
+11:21:06.838: 	buffer size:  0
+11:21:06.838: 	crf:          23
+11:21:06.838: 	fps_num:      60
+11:21:06.838: 	fps_den:      1
+11:21:06.838: 	width:        1920
+11:21:06.838: 	height:       1080
+11:21:06.838: 	keyint:       250
+11:21:06.838: 
+11:21:06.840: libfdk_aac encoder created
+11:21:06.840: libfdk_aac bitrate: 192, channels: 2
+11:21:06.841: ==== Recording Start ===============================================
+11:21:06.841: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-21-06.mkv'...
+11:21:10.730: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-21-06.mkv' stopped
+11:21:10.730: Output 'simple_file_output': stopping
+11:21:10.730: Output 'simple_file_output': Total frames output: 194
+11:21:10.730: Output 'simple_file_output': Total drawn frames: 233
+11:21:10.730: ==== Recording Stop ================================================
+11:21:10.737: libfdk_aac encoder destroyed
+11:21:27.405: Switched to Preview/Program mode
+11:21:27.405: ------------------------------------------------
+11:21:28.533: Switched to scene 'Scene'
+11:21:28.557: Switched to regular Preview mode
+11:21:28.557: ------------------------------------------------
+11:21:29.226: ---------------------------------
+11:21:29.226: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:21:29.226: [x264 encoder: 'simple_video_recording'] profile: high
+11:21:29.226: [x264 encoder: 'simple_video_recording'] settings:
+11:21:29.226: 	rate_control: CRF
+11:21:29.226: 	bitrate:      0
+11:21:29.226: 	buffer size:  0
+11:21:29.226: 	crf:          23
+11:21:29.226: 	fps_num:      60
+11:21:29.226: 	fps_den:      1
+11:21:29.226: 	width:        1920
+11:21:29.226: 	height:       1080
+11:21:29.226: 	keyint:       250
+11:21:29.226: 
+11:21:29.228: libfdk_aac encoder created
+11:21:29.228: libfdk_aac bitrate: 192, channels: 2
+11:21:29.229: ==== Recording Start ===============================================
+11:21:29.229: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-21-29.mkv'...
+11:25:54.606: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-21-29.mkv' stopped
+11:25:54.606: Output 'simple_file_output': stopping
+11:25:54.606: Output 'simple_file_output': Total frames output: 15883
+11:25:54.606: Output 'simple_file_output': Total drawn frames: 15923
+11:25:54.606: ==== Recording Stop ================================================
+11:25:54.616: libfdk_aac encoder destroyed
+11:26:46.718: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0eda7a40, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:26:52.505: User added scene 'Firefox'
+11:26:52.505: User added source 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source) to scene 'Firefox'
+11:26:52.511: Switched to scene 'Firefox'
+11:26:59.543: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ed631a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:26:59.939: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ed631a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:27:27.968: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e133d7400, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:27:36.946: ---------------------------------
+11:27:36.946: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:27:36.946: [x264 encoder: 'simple_video_recording'] profile: high
+11:27:36.946: [x264 encoder: 'simple_video_recording'] settings:
+11:27:36.946: 	rate_control: CRF
+11:27:36.946: 	bitrate:      0
+11:27:36.946: 	buffer size:  0
+11:27:36.946: 	crf:          23
+11:27:36.946: 	fps_num:      60
+11:27:36.946: 	fps_den:      1
+11:27:36.946: 	width:        1920
+11:27:36.946: 	height:       1080
+11:27:36.946: 	keyint:       250
+11:27:36.946: 
+11:27:36.949: libfdk_aac encoder created
+11:27:36.949: libfdk_aac bitrate: 192, channels: 2
+11:27:36.950: ==== Recording Start ===============================================
+11:27:36.950: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-27-36.mkv'...
+11:27:50.757: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-27-36.mkv' stopped
+11:27:50.757: Output 'simple_file_output': stopping
+11:27:50.757: Output 'simple_file_output': Total frames output: 790
+11:27:50.757: Output 'simple_file_output': Total drawn frames: 829
+11:27:50.758: ==== Recording Stop ================================================
+11:27:50.770: libfdk_aac encoder destroyed
+11:29:19.486: User switched to scene 'Scene'
+11:32:38.884: User switched to scene 'Firefox'
+11:36:41.040: User switched to scene 'Scene'
+11:40:40.233: User added scene 'FullScreen'
+11:40:40.233: User added source 'Screen Capture (PipeWire)' (pipewire-desktop-capture-source) to scene 'FullScreen'
+11:40:40.240: Switched to scene 'FullScreen'
+11:40:49.441: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ec534a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:40:49.742: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ec534a0, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:41:12.468: Source 'FullScreen' renamed to 'CodeFullScreen'
+11:41:18.242: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0f09f340, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:42:11.617: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ef83820, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:42:44.742: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e11fd2700, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:42:52.893: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ee98240, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:43:06.442: Creating a popup with a parent, QWidgetWindow(0x559e0d8c7b90, name="OBSBasicWindow") which does not match the current topmost grabbing popup, QWidgetWindow(0x559e0ef8c450, name="QMenuClassWindow") With some shell surface protocols, this is not allowed. The wayland QPA plugin is currently handling it by setting the parent to the topmost grabbing popup. Note, however, that this may cause positioning errors and popups closing unxpectedly. Please fix the transient parent of the popup.
+11:44:48.122: ---------------------------------
+11:44:48.122: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:44:48.122: [x264 encoder: 'simple_video_recording'] profile: high
+11:44:48.122: [x264 encoder: 'simple_video_recording'] settings:
+11:44:48.122: 	rate_control: CRF
+11:44:48.122: 	bitrate:      0
+11:44:48.122: 	buffer size:  0
+11:44:48.122: 	crf:          23
+11:44:48.122: 	fps_num:      60
+11:44:48.122: 	fps_den:      1
+11:44:48.122: 	width:        1920
+11:44:48.122: 	height:       1080
+11:44:48.122: 	keyint:       250
+11:44:48.122: 
+11:44:48.125: libfdk_aac encoder created
+11:44:48.125: libfdk_aac bitrate: 192, channels: 2
+11:44:48.126: ==== Recording Start ===============================================
+11:44:48.126: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-44-48.mkv'...
+11:45:52.174: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-44-48.mkv' stopped
+11:45:52.174: Output 'simple_file_output': stopping
+11:45:52.174: Output 'simple_file_output': Total frames output: 3804
+11:45:52.174: Output 'simple_file_output': Total drawn frames: 3843
+11:45:52.174: ==== Recording Stop ================================================
+11:45:52.182: libfdk_aac encoder destroyed
+11:50:52.319: ---------------------------------
+11:50:52.319: [x264 encoder: 'simple_video_recording'] preset: veryfast
+11:50:52.319: [x264 encoder: 'simple_video_recording'] profile: high
+11:50:52.319: [x264 encoder: 'simple_video_recording'] settings:
+11:50:52.319: 	rate_control: CRF
+11:50:52.319: 	bitrate:      0
+11:50:52.319: 	buffer size:  0
+11:50:52.319: 	crf:          23
+11:50:52.319: 	fps_num:      60
+11:50:52.319: 	fps_den:      1
+11:50:52.319: 	width:        1920
+11:50:52.319: 	height:       1080
+11:50:52.319: 	keyint:       250
+11:50:52.319: 
+11:50:52.322: libfdk_aac encoder created
+11:50:52.322: libfdk_aac bitrate: 192, channels: 2
+11:50:52.323: ==== Recording Start ===============================================
+11:50:52.323: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_11-50-52.mkv'...
+11:51:00.475: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_11-50-52.mkv' stopped
+11:51:00.475: Output 'simple_file_output': stopping
+11:51:00.475: Output 'simple_file_output': Total frames output: 451
+11:51:00.475: Output 'simple_file_output': Total drawn frames: 489
+11:51:00.475: ==== Recording Stop ================================================
+11:51:00.483: libfdk_aac encoder destroyed
+12:01:28.909: User switched to scene 'Firefox'
+12:01:40.158: ---------------------------------
+12:01:40.158: [x264 encoder: 'simple_video_recording'] preset: veryfast
+12:01:40.158: [x264 encoder: 'simple_video_recording'] profile: high
+12:01:40.158: [x264 encoder: 'simple_video_recording'] settings:
+12:01:40.158: 	rate_control: CRF
+12:01:40.158: 	bitrate:      0
+12:01:40.158: 	buffer size:  0
+12:01:40.158: 	crf:          23
+12:01:40.158: 	fps_num:      60
+12:01:40.158: 	fps_den:      1
+12:01:40.158: 	width:        1920
+12:01:40.158: 	height:       1080
+12:01:40.158: 	keyint:       250
+12:01:40.158: 
+12:01:40.160: libfdk_aac encoder created
+12:01:40.160: libfdk_aac bitrate: 192, channels: 2
+12:01:40.161: ==== Recording Start ===============================================
+12:01:40.161: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_12-01-40.mkv'...
+12:01:48.275: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_12-01-40.mkv' stopped
+12:01:48.275: Output 'simple_file_output': stopping
+12:01:48.275: Output 'simple_file_output': Total frames output: 448
+12:01:48.275: Output 'simple_file_output': Total drawn frames: 487
+12:01:48.275: ==== Recording Stop ================================================
+12:01:48.282: libfdk_aac encoder destroyed
+12:01:55.141: ---------------------------------
+12:01:55.141: [x264 encoder: 'simple_video_recording'] preset: veryfast
+12:01:55.141: [x264 encoder: 'simple_video_recording'] profile: high
+12:01:55.141: [x264 encoder: 'simple_video_recording'] settings:
+12:01:55.141: 	rate_control: CRF
+12:01:55.141: 	bitrate:      0
+12:01:55.141: 	buffer size:  0
+12:01:55.141: 	crf:          23
+12:01:55.141: 	fps_num:      60
+12:01:55.141: 	fps_den:      1
+12:01:55.141: 	width:        1920
+12:01:55.141: 	height:       1080
+12:01:55.141: 	keyint:       250
+12:01:55.141: 
+12:01:55.143: libfdk_aac encoder created
+12:01:55.143: libfdk_aac bitrate: 192, channels: 2
+12:01:55.144: ==== Recording Start ===============================================
+12:01:55.144: [ffmpeg muxer: 'simple_file_output'] Writing file '/home/taidac/Videos/2024-04-25_12-01-55.mkv'...
+12:02:28.755: [ffmpeg muxer: 'simple_file_output'] Output of file '/home/taidac/Videos/2024-04-25_12-01-55.mkv' stopped
+12:02:28.755: Output 'simple_file_output': stopping
+12:02:28.755: Output 'simple_file_output': Total frames output: 1978
+12:02:28.755: Output 'simple_file_output': Total drawn frames: 2017
+12:02:28.755: ==== Recording Stop ================================================
+12:02:28.769: libfdk_aac encoder destroyed
+12:58:50.221: ==== Shutting down ==================================================
+12:58:50.224: pulse-input: Stopped recording from 'bluez_output.28_9A_4B_71_1B_D1.1.monitor'
+12:58:50.224: pulse-input: Got 152420 packets with 60968000 frames
+12:58:50.224: pulse-input: Stopped recording from 'bluez_input.28:9A:4B:71:1B:D1'
+12:58:50.224: pulse-input: Got 152407 packets with 182888400 frames
+12:58:50.225: [pipewire] Stream 0x559e0ec4d1e0 state: "paused" (error: none)
+12:58:50.225: [pipewire] Stream 0x559e0ec4d1e0 state: "unconnected" (error: none)
+12:58:50.281: All scene data cleared
+12:58:50.281: ------------------------------------------------
+12:58:50.335: [obs-websocket] [obs_module_unload] Shutting down...
+12:58:50.336: Tried to call obs_frontend_remove_event_callback with no callbacks!
+12:58:50.336: [obs-websocket] [obs_module_unload] Finished shutting down.
+12:58:50.343: [Scripting] Total detached callbacks: 0
+12:58:50.344: Freeing OBS context data
+12:58:50.353: == Profiler Results =============================
+12:58:50.353: run_program_init: 844.186 ms
+12:58:50.353:  ┣OBSApp::AppInit: 2.793 ms
+12:58:50.353:  ┃ ┗OBSApp::InitLocale: 0.647 ms
+12:58:50.353:  ┗OBSApp::OBSInit: 712.415 ms
+12:58:50.353:    ┣obs_startup: 1.638 ms
+12:58:50.353:    ┗OBSBasic::OBSInit: 686.751 ms
+12:58:50.353:      ┣OBSBasic::InitBasicConfig: 0.094 ms
+12:58:50.353:      ┣OBSBasic::ResetAudio: 0.213 ms
+12:58:50.353:      ┣OBSBasic::ResetVideo: 27.619 ms
+12:58:50.353:      ┃ ┗obs_init_graphics: 27.214 ms
+12:58:50.353:      ┃   ┗shader compilation: 17.095 ms
+12:58:50.353:      ┣OBSBasic::InitOBSCallbacks: 0.003 ms
+12:58:50.353:      ┣OBSBasic::InitHotkeys: 0.017 ms
+12:58:50.353:      ┣obs_load_all_modules2: 542.181 ms
+12:58:50.353:      ┃ ┣obs_init_module(decklink-captions.so): 0 ms
+12:58:50.353:      ┃ ┣obs_init_module(decklink-output-ui.so): 0 ms
+12:58:50.353:      ┃ ┣obs_init_module(decklink.so): 0.078 ms
+12:58:50.353:      ┃ ┣obs_init_module(frontend-tools.so): 54.541 ms
+12:58:50.353:      ┃ ┣obs_init_module(image-source.so): 0.007 ms
+12:58:50.353:      ┃ ┣obs_init_module(linux-alsa.so): 0.001 ms
+12:58:50.353:      ┃ ┣obs_init_module(linux-capture.so): 0 ms
+12:58:50.353:      ┃ ┣obs_init_module(linux-jack.so): 0.003 ms
+12:58:50.353:      ┃ ┣obs_init_module(linux-pipewire.so): 2.87 ms
+12:58:50.353:      ┃ ┣obs_init_module(linux-pulseaudio.so): 0.002 ms
+12:58:50.353:      ┃ ┣obs_init_module(linux-v4l2.so): 2.583 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-browser.so): 0.057 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-ffmpeg.so): 0.961 ms
+12:58:50.353:      ┃ ┃ ┗nvenc_check: 0.592 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-filters.so): 0.021 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-libfdk.so): 0.001 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-outputs.so): 0.003 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-qsv11.so): 0.718 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-transitions.so): 0.006 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-vst.so): 0.008 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-webkitgtk.so): 0.004 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-webrtc.so): 0.004 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-websocket.so): 3.238 ms
+12:58:50.353:      ┃ ┣obs_init_module(obs-x264.so): 0.002 ms
+12:58:50.353:      ┃ ┣obs_init_module(rtmp-services.so): 0.395 ms
+12:58:50.353:      ┃ ┣obs_init_module(text-freetype2.so): 0.008 ms
+12:58:50.353:      ┃ ┗obs_init_module(vlc-video.so): 1.509 ms
+12:58:50.353:      ┣OBSBasic::InitService: 0.684 ms
+12:58:50.353:      ┣OBSBasic::ResetOutputs: 0.126 ms
+12:58:50.353:      ┣OBSBasic::CreateHotkeys: 0.016 ms
+12:58:50.353:      ┣OBSBasic::InitPrimitives: 0.132 ms
+12:58:50.353:      ┗OBSBasic::Load: 35.067 ms
+12:58:50.353: obs_hotkey_thread(25 ms): min=0 ms, median=0.001 ms, max=0.179 ms, 99th percentile=0.003 ms, 100% below 25 ms
+12:58:50.353: audio_thread(Audio): min=0.008 ms, median=0.107 ms, max=12.244 ms, 99th percentile=0.78 ms
+12:58:50.353:  ┗receive_audio: min=0.001 ms, median=0.098 ms, max=11.015 ms, 99th percentile=0.253 ms, 0.111796 calls per parent call
+12:58:50.353:    ┣buffer_audio: min=0 ms, median=0 ms, max=0.071 ms, 99th percentile=0.002 ms
+12:58:50.353:    ┗do_encode: min=0.045 ms, median=0.096 ms, max=11.012 ms, 99th percentile=0.246 ms
+12:58:50.353:      ┣encode(simple_aac_recording0): min=0.042 ms, median=0.089 ms, max=0.423 ms, 99th percentile=0.225 ms
+12:58:50.353:      ┗send_packet: min=0.001 ms, median=0.005 ms, max=10.933 ms, 99th percentile=0.024 ms
+12:58:50.353: obs_graphics_thread(16.6667 ms): min=0.127 ms, median=2.017 ms, max=6264.99 ms, 99th percentile=6.717 ms, 99.9461% below 16.667 ms
+12:58:50.353:  ┣tick_sources: min=0 ms, median=0.012 ms, max=24.48 ms, 99th percentile=0.075 ms
+12:58:50.353:  ┣output_frame: min=0.03 ms, median=0.339 ms, max=27.644 ms, 99th percentile=1.356 ms
+12:58:50.353:  ┃ ┣gs_context(video->graphics): min=0.03 ms, median=0.319 ms, max=27.642 ms, 99th percentile=1.297 ms
+12:58:50.353:  ┃ ┃ ┣render_video: min=0.019 ms, median=0.235 ms, max=27.572 ms, 99th percentile=1.046 ms
+12:58:50.353:  ┃ ┃ ┃ ┣render_main_texture: min=0.016 ms, median=0.214 ms, max=27.559 ms, 99th percentile=1.015 ms
+12:58:50.353:  ┃ ┃ ┃ ┣render_convert_texture: min=0.026 ms, median=0.058 ms, max=0.569 ms, 99th percentile=0.211 ms, 0.11201 calls per parent call
+12:58:50.353:  ┃ ┃ ┃ ┗stage_output_texture: min=0.016 ms, median=0.038 ms, max=2.174 ms, 99th percentile=0.154 ms, 0.11201 calls per parent call
+12:58:50.353:  ┃ ┃ ┣gs_flush: min=0.002 ms, median=0.013 ms, max=2.74 ms, 99th percentile=0.325 ms
+12:58:50.353:  ┃ ┃ ┗download_frame: min=0 ms, median=0.003 ms, max=0.183 ms, 99th percentile=0.007 ms, 0.11201 calls per parent call
+12:58:50.353:  ┃ ┗output_video_data: min=0.248 ms, median=0.427 ms, max=1.382 ms, 99th percentile=0.82 ms, 0.111971 calls per parent call
+12:58:50.353:  ┗render_displays: min=0.009 ms, median=1.32 ms, max=364.338 ms, 99th percentile=6.039 ms
+12:58:50.353: video_thread(video): min=0.603 ms, median=1.317 ms, max=18.874 ms, 99th percentile=4.446 ms
+12:58:50.353:  ┗receive_video: min=0.602 ms, median=1.315 ms, max=18.872 ms, 99th percentile=4.442 ms
+12:58:50.353:    ┗do_encode: min=0.601 ms, median=1.314 ms, max=18.871 ms, 99th percentile=4.441 ms
+12:58:50.353:      ┣encode(simple_video_recording): min=0.594 ms, median=1.303 ms, max=6.201 ms, 99th percentile=4.417 ms
+12:58:50.353:      ┗send_packet: min=0.001 ms, median=0.006 ms, max=17.681 ms, 99th percentile=0.052 ms
+12:58:50.353: =================================================
+12:58:50.353: == Profiler Time Between Calls ==================
+12:58:50.353: obs_hotkey_thread(25 ms): min=25.011 ms, median=25.102 ms, max=1172.5 ms, 99.969% within ±2% of 25 ms (0% lower, 0.0309875% higher)
+12:58:50.353: obs_graphics_thread(16.6667 ms): min=1.643 ms, median=16.666 ms, max=6265.01 ms, 99.866% within ±2% of 16.667 ms (0.065265% lower, 0.0687692% higher)
+12:58:50.353: =================================================
+12:58:50.373: Number of memory leaks: 0
