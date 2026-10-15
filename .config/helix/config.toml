@@ -1,0 +1,19 @@
+theme = "catpuccin_mocha"
+
+[editor]
+line-number = "relative"
+mouse = true
+cursorline = true
+color-modes = true
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+select = "block"
+normal = "block"
+
+[editor.indent-guides]
+render = true
+
+[keys.normal]
+C-s = ":w"

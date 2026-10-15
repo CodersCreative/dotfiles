@@ -1,0 +1,24 @@
+#!/usr/bin/env -S calibre run
+
+import range from std::random;
+
+const main := fn => {
+    let choices := list:<<str, int>>[
+        ("Mathematics - Paper 3", 105),
+        ("Mathematics - Paper 4", 75),
+        ("Physics - Paper 4", 120),
+        ("Physics - Paper 5", 75),
+        ("Computer Science - Paper 3", 90),
+    ];
+
+    let choice : int = range(0, 5);
+
+    print("Hey Taida!!!");
+    print("Good job for wanting to do some studying!!!\n");
+    print("Please try and complete one:");
+
+    let choice : <str, int> = try choices[choice] => try!! choices[0];
+    print(choice.0);
+    print("which should take " & ((choice.1) / 60) & "hrs and " & (choice.1 - ((choice.1 / 60) * 60)) & "mins.\n");
+    print("Have fun!!!");
+}

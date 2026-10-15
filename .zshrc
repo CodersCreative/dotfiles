@@ -74,6 +74,8 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
+alias cloc='tokei'
+alias loc='tokei'
 
 # Shell integrations
 eval "$(fzf --zsh)"
@@ -101,7 +103,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -147,7 +149,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(git)
-
+plugins=(poetry)
+plugins=(asdf)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -175,15 +178,15 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cw="cargo watch -q -c -w src/ -x 'run -q'"
-alias ta="tmux attach"
-alias tat="tmux attach -t"
-alias tl="tmux ls"
+alias cw="cargo fmt && cargo watch -q -c -w src/ -x 'run -q'"
 alias vi=nvim
 alias nano=nvim
 alias fnvim="fzf | xargs nvim"
 alias fx="fzf | xargs"
 alias hdi='function hdi(){ howdoi $* -c -n 5; }; hdi'
+alias cc="cargo fmt && cargo check"
+alias cr="cargo fmt && cargo run"
+alias gitfix="find .git/objects/ -type f -empty -delete && git fetch --all --prune"
 
 function yy() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
@@ -195,10 +198,15 @@ function yy() {
 }
 
 # Created by `pipx` on 2024-04-24 22:02:16
-export PATH="$PATH:/home/taidac/.local/bin"
-export PATH="$PATH:/home/taidac/.cargo/bin"
-
-
+export PATH="$PATH:$HOME/.local/share/.zm/bin"
+export PATH="$PATH:$HOME/.local/share/.zm/version"
+export PATH="$PATH:$HOME/bin"
+export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.cargo/bin"
+export PATH="$PATH:$HOME/.baml/bin"
+export PATH="$PATH:$HOME/flutter/bin"
+export PATH="$PATH:$HOME/.pub-cache/bin"
+export PATH="$PATH:/usr/local/go/bin"
 # Set up fzf key bindings and fuzzy completion
 eval "$(fzf --zsh)"
 
@@ -251,26 +259,192 @@ export BAT_THEME=tokyonight_night
 alias ls="eza --icons=always"
 
 alias manin="manim -pql"
+alias alacritty="cosmic-term"
+alias uvshow="ls ~/venv/"
+alias study="calibre run '$HOME/.calibre/study_picker.cal'"
+# ---- UV -----
+
+uvnew() {
+    local venv_name="${1:-default}" # Default to .venv if no name is provided
+    local python_version="${2}" # Optional Python version argument
+    
+    local activate_script
+    
+    # Check if 'uv' is installed
+    if ! command -v uv &> /dev/null
+    then
+        echo "Error: 'uv' command not found. Please install uv first." >&2
+        return 1
+    fi
+
+    local venv_path="$HOME/venv/$venv_name"
+        
+    # Construct the uv venv command
+    local uv_command="uv venv '$venv_path'"
+    if [[ -n "$python_version" ]]; then
+        eval "uv python install $python_version"
+        uv_command+=" --python $python_version"
+    fi
+    
+    # Create the virtual environment
+    if ! eval "$uv_command"; then
+        echo "Error: 'uv venv' failed." >&2
+        return 1
+    fi
+    
+    # Determine the activation script path for Unix-like systems
+    activate_script="$venv_path/bin/activate"
+    
+    # Check if the activation script was created
+    if [[ -f "$activate_script" ]]; then
+        echo "✅ Virtual environment created successfully."
+        echo "Activating it now..."
+        
+        # Source the activation script
+        source "$activate_script"
+        
+        if [[ "$?" -eq 0 ]]; then
+            echo "✨ Virtual environment '$venv_name' is now **active**."
+        else
+            echo "Warning: Failed to automatically activate the virtual environment."
+            echo "You can activate it manually by running: source $venv_name/bin/activate"
+        fi
+        
+    else
+        echo "Error: Virtual environment directory created, but activation script not found." >&2
+        return 1
+    fi
+}
+
+uvin() {
+    local venv_name="${1:-default}" # Default to .venv if no name is provided
+    local activate_script
+    
+    # 1. Check if an environment is already active and deactivate it
+    if [[ -n "$VIRTUAL_ENV" ]]; then
+        echo "Deactivating current virtual environment: $(basename "$VIRTUAL_ENV")"
+        deactivate
+    fi
+    
+    # 2. Determine the full path to the activation script
+    # It first checks if the argument is a full path, then checks the current directory.
+    if [[ -d "$HOME/venv/$venv_name" ]]; then
+        # Use the argument directly as a directory path
+        activate_script="$HOME/venv/$venv_name/bin/activate"
+    elif [[ -d "$venv_name" ]]; then
+        # Use the argument directly as a directory path
+        activate_script="$venv_name/bin/activate"
+    elif [[ -d "./$venv_name" ]]; then
+        # Check for the venv in the current directory
+        activate_script="./$venv_name/bin/activate"
+    else
+        echo "Error: Virtual environment directory '$venv_name' not found in $PWD." >&2
+        return 1
+    fi
+
+    # Clean up the path (e.g., removes the leading './')
+    activate_script=$(echo "$activate_script" | sed 's/\.\///')
+
+    # 3. Check for the activation script and source it
+    if [[ -f "$activate_script" ]]; then
+        echo "Activating virtual environment at: $activate_script"
+        source "$activate_script"
+        
+        if [[ "$?" -eq 0 ]]; then
+            echo "✨ Virtual environment **$(basename "$venv_name")** is now active."
+        else
+            echo "Error: Failed to activate the virtual environment." >&2
+            return 1
+        fi
+    else
+        echo "Error: Activation script not found at '$activate_script'." >&2
+        return 1
+    fi
+}
+
 # ---- TheFuck -----
 
 # thefuck alias
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
+# eval "$(zellij setup --generate-auto-start zsh)"
 
-tmux -2
-# alias tmux="tmux -2"
 clear
 
 ran=$((RANDOM % 10))  # Generate random number between 0 and 9 (inclusive)
 
-logo_file="/home/taidac/Documents/Ascii/cc.txt"  # Default logo file
+logo_file="$HOME/.config/fastfetch/cc.txt"  # Default logo file
 
 if [[ $ran -gt 5 ]]; then
-  logo_file="/home/taidac/Documents/Ascii/cclogos.txt"
+  logo_file="$HOME/.config/fastfetch/calibre.txt"
 fi
 
-fastfetch -l "$logo_file" -c "/home/taidac/.config/fastfetch/config_small.jsonc"
+fastfetch -l "$logo_file" --logo-width 20 --logo-height 20 --logo-preserve-aspect-ratio true -c "$HOME/.config/fastfetch/config.jsonc"
 alias cat=bat
 
-. "$HOME/.asdf/asdf.sh"
-. "$HOME/.asdf/completions/asdf.bash"
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#313244,bg:#1e1e2e,spinner:#f5e0dc,hl:#f38ba8 \
+--color=fg:#cdd6f4,header:#f38ba8,info:#cba6f7,pointer:#f5e0dc \
+--color=marker:#b4befe,fg+:#cdd6f4,prompt:#cba6f7,hl+:#f38ba8 \
+--color=selected-bg:#45475a \
+--multi"
+
+# . "$HOME/.asdf/asdf.sh"
+# . "$HOME/.asdf/completions/asdf.bash"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
+
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zdharma-continuum/zinit-annex-as-monitor \
+    zdharma-continuum/zinit-annex-bin-gem-node \
+    zdharma-continuum/zinit-annex-patch-dl \
+    zdharma-continuum/zinit-annex-rust
+
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('$HOME/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "$HOME/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "$HOME/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="$HOME/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:$HOME/.lmstudio/bin"
+# End of LM Studio CLI section
+
+
+# opencode
+export PATH=$HOME/.opencode/bin:$PATH
+. "$HOME/.deno/env"
+
+# bun completions
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+export PATH="$HOME/develop/odin:$PATH"
+export PATH="$HOME/develop/ols:$PATH"
+
+export PATH="$PATH:$HOME/roc_nightly-linux_x86_64-2026-08-23-fb208ba"

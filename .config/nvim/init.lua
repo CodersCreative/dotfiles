@@ -16,6 +16,12 @@ if not vim.loop.fs_stat(lazypath) then
   require("core.bootstrap").lazy(lazypath)
 end
 
+-- local gdproject = io.open(vim.fn.getcwd()..'/project.godot', 'r')
+-- if gdproject then
+--     io.close(gdproject)
+--     vim.fn.serverstart './godothost'
+-- end
+
 dofile(vim.g.base46_cache .. "defaults")
 vim.opt.rtp:prepend(lazypath)
 require "plugins"

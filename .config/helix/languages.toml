@@ -1,0 +1,122 @@
+[[language]]
+name = "calibre"
+scope = "source.cal"
+file-types = ["cal", "cl"]
+comment-tokens = "//"
+indent = { tab-width = 4, unit = "  " }
+auto-format = false
+formatter = { command = "calibre", args = ["fmt", "--stdin", "--stdin-filename=%{buffer_name}" ]}
+language-servers = [ "calibre-lsp" ]
+
+[[grammar]]
+name = "calibre"
+source = {git = "https://github.com/CodersCreative/tree-sitter-calibre", rev = "main" }
+
+[language-server.baml-lsp]
+command = "baml"
+args = ["lsp"]
+
+[[language]]
+name = "baml"
+scope = "source.baml"
+file-types = ["baml"]
+comment-token = "//"
+language-servers = [ "baml-lsp" ]
+
+[[grammar]]
+name = "baml"
+source.git = "https://github.com/BoundaryML/baml-treesitter"
+source.rev = "main"
+
+[[language]]
+name = "zig"
+language-servers = ["zls"]
+
+[language-server.zls]
+command = "zls"
+
+[[language]]
+name = "toml"
+# https://github.com/tamasfe/taplo/issues/580#issuecomment-2004174721
+roots = ["."]
+language-servers = ["taplo"]
+
+[[language]]
+name = "rust"
+language-servers = ["rust-analyzer", "tailwindcss-ls"]
+
+[language-server.tailwindcss-ls]
+command = "tailwindcss-language-server"
+args = ["--stdio"]
+
+# This improves intellisense within [component] blocks - https://github.com/leptos-rs/leptos/issues/1310
+[language-server.rust-analyzer.config]
+procMacro = {ignored = {leptos_macro = ["component"]}}
+
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[[language]]
+name = "toml"
+
+[[language]]
+name = "html"
+formatter = { command = 'prettier', args = ["--parser", "html"] }
+language-servers = [ "vscode-html-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "json"
+formatter = { command = 'prettier', args = ["--parser", "json"] }
+
+[[language]]
+name = "css"
+formatter = { command = 'prettier', args = ["--parser", "css"] }
+language-servers = [ "vscode-css-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "jsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "tsx"
+language-servers = [ "typescript-language-server", "tailwindcss-ls" ]
+
+[[language]]
+name = "svelte"
+language-servers = [ "svelteserver", "tailwindcss-ls" ]
+
+[[language]]
+name = "javascript"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "typescript"
+auto-format = true
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+
+[[language]]
+name = "tsx"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+
+[[language]]
+name = "jsx"
+formatter = { command = 'prettier', args = ["--parser", "typescript"] }
+auto-format = true
+
+[language-server.pylsp]
+command = "uv"
+args = ["run", "pylsp"]
+
+[language-server.basedpyright]
+command = "uv"
+args = ["run", "basedpyright-langserver", "--stdio"]
+
+[[language]]
+name = "python"
+language-servers = ["pylsp", "basedpyright"]
+formatter = { command = "uv", args = ["run", "ruff", "format", "--stdin-filename", "file.py", "-"] }
+
+[language-server.calibre-lsp]
+command = "calibre-lsp"

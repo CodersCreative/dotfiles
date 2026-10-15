@@ -12,12 +12,15 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "gdscript",
   },
+  auto_install = true,
   indent = {
     enable = true,
-    -- disable = {
-    --   "python"
-    -- },
+    disable = {
+      "python",
+      "gdscript"
+    },
   },
 }
 
@@ -32,7 +35,7 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
-    "prettier",
+    -- "prettier",
 
     -- c/cpp stuff
     "clangd",

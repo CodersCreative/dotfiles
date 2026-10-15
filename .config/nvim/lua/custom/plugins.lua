@@ -24,6 +24,11 @@ local plugins = {
       ensure_installed = {"rust-analyzer",},
     },
   },
+  {
+    "habamax/vim-godot",
+    event = "VimEnter",
+    -- lazy = false,
+  },
 
   {
     "nvim-treesitter/nvim-treesitter",
@@ -43,15 +48,14 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
-
-  -- {
-  --   "stevearc/conform.nvim",
-  --   --  for users those who want auto-save conform + lazyloading!
-  --   event = "BufWritePre"
-  --   config = function()
-  --     require "custom.configs.conform"
-  --   end,
-  -- },
+  {
+    "stevearc/conform.nvim",
+    --  for users those who want auto-save conform + lazyloading!
+    event = "BufWritePre",
+    config = function()
+      require "custom.configs.conform"
+    end,
+  },
   {
     "iamcco/markdown-preview.nvim",
     cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
@@ -85,6 +89,52 @@ local plugins = {
         debug = false -- Prints errors and the command which is run.
     }
   },
+  {
+      "nvim-neotest/nvim-nio",
+  },
+
+  {
+      "mfussenegger/nvim-dap-python",
+      ft = "python",
+      dependencies = {
+          "mfussenegger/nvim-dap",
+          "rcarriga/nvim-dap-ui",
+      },
+      config = function()
+          require("custom.configs.dap-python")
+      end,
+  },
+  {
+      "jay-babu/mason-nvim-dap.nvim",
+      event = "VeryLazy",
+      config = function()
+          require("custom.configs.mason-dap")
+      end,
+  },
+  {
+    "mfussenegger/nvim-dap",
+    recommended = true,
+    desc = "Debugging support. Requires language specific adapters to be configured. (see lang extras)",
+    dependencies = {
+      {
+          "rcarriga/nvim-dap-ui",
+          dependencies = {
+              "nvim-neotest/nvim-nio",
+          },
+          config = function()
+              require("custom.configs.dap-ui")
+          end,
+      },
+      -- virtual text for the debugger
+      {
+        "theHamsta/nvim-dap-virtual-text",
+        opts = {},
+      },
+      config = function()
+          require("custom.configs.dap")
+      end,
+    },
+  },
   ---@type LazySpec
   {
     "mikavilpas/yazi.nvim",
@@ -112,8 +162,17 @@ local plugins = {
       -- if you want to open yazi instead of netrw, see below for more info
       open_for_directories = false,
     },
-  }
+  },
+  {
+    "thePrimeagen/vim-be-good",
+    cmd = "VimBeGood",
+    config = function()
+      require("VimBeGood").setup {}
+    end,
+  },
+
   -- To make a plugin not be loaded
+  --
   -- {
   --   "NvChad/nvim-colorizer.lua",
   --   enabled = false

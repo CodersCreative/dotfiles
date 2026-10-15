@@ -19,6 +19,7 @@ M.on_attach = function(client, bufnr)
 end
 
 M.capabilities = vim.lsp.protocol.make_client_capabilities()
+M.capabilities = require("cmp_nvim_lsp").default_capabilities(M.capabilities)
 
 M.capabilities.textDocument.completion.completionItem = {
   documentationFormat = { "markdown", "plaintext" },
@@ -61,7 +62,7 @@ require("lspconfig").lua_ls.setup {
   },
 }
 
-require'lspconfig'.gdscript.setup{}
-
-require'lspconfig'.gdshader_lsp.setup{}
+-- require'lspconfig'.gdscript.setup{}
+--
+-- require'lspconfig'.gdshader_lsp.setup{}
 return M
